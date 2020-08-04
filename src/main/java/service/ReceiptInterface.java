@@ -1,14 +1,16 @@
 package service;
 
+import java.util.UUID;
+
 import domain.Receipt;
 
 public interface ReceiptInterface {
 
-		public Receipt getReceipt();
+		public Receipt getReceiptByID(UUID id);
 		
-		public int updateReceipt();
+		public int updateReceiptByID(UUID id);
 		
-		public int deleteReceipt();
+		public int deleteReceiptByID(UUID id);
 		
-		public int createReciept();
+		public int createRecieptByID(UUID id);
 }

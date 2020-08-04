@@ -1,14 +1,16 @@
 package service;
 
+import java.util.UUID;
+
 import domain.Products;
 
 public interface ProductsInterface {
 
-		public int updateItem();
+		public int updateItem(UUID id);
 		
-		public int deleteItem();
+		public int deleteItem(UUID id);
 		
-		public int addItem();
+		public int addItem(UUID id);
 		
-		public Products getItem();
+		public Products getItem(UUID id);
 }

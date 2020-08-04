@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.UUID;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,5 +16,6 @@ public class Staff implements Person{
 	private String cellNumber;
 	@Getter @Setter
 	private String email;
-	
+	@Getter @Setter
+	private UUID staffID;
 }

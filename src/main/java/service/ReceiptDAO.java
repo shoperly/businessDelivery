@@ -1,31 +1,35 @@
 package service;
 
+import java.util.UUID;
+
 import domain.Receipt;
 
 public class ReceiptDAO implements ReceiptInterface{
 
 	@Override
-	public Receipt getReceipt() {
+	public Receipt getReceiptByID(UUID id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int updateReceipt() {
+	public int updateReceiptByID(UUID id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int deleteReceipt() {
+	public int deleteReceiptByID(UUID id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int createReciept() {
+	public int createRecieptByID(UUID id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+
 
 }

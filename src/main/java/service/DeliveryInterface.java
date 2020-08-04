@@ -1,14 +1,25 @@
 package service;
 
+import java.util.UUID;
+
 import domain.Delivery;
 
 public interface DeliveryInterface {
 
-	public Delivery getDelivery();
+	public Delivery getDeliveryByCustID(UUID id);
 	
-	public int addDelivery();
+	public int addDeliveryByCustID(UUID id);
 	
-	public int updateDelivery();
+	public int updateDeliveryByCustID(UUID id);
 	
-	public int deleteDelivery();
+	public int deleteDeliveryByCustID(UUID id);
+	
+
+	public Delivery getDeliveryByStaffID(UUID id);
+	
+	public int addDeliveryByStaffID(UUID id);
+	
+	public int updateDeliveryByStaffID(UUID id);
+	
+	public int deleteDeliveryByStaffID(UUID id);
 }

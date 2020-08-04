@@ -1,6 +1,7 @@
 package domain;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,4 +13,6 @@ public class Products {
 	private  BigDecimal price;
 	@Getter @Setter
 	private String details;
+	@Getter @Setter
+	private UUID productID;
 }

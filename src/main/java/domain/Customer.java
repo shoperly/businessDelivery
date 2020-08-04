@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.UUID;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,5 +18,7 @@ public class Customer implements Person{
 	private String email;
 	@Getter @Setter
 	private String cardDetails;
+	@Getter @Setter
+	private UUID custID;
 
 }
