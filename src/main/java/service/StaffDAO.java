@@ -13,7 +13,7 @@ public class StaffDAO implements StaffInterface{
 	}
 
 	@Override
-	public int updateStaffByID(UUID id) {
+	public int updateStaffByID(Staff staff) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -25,7 +25,7 @@ public class StaffDAO implements StaffInterface{
 	}
 
 	@Override
-	public int addStaffByID(UUID id) {
+	public int addStaffByID(Staff staff) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -37,7 +37,7 @@ public class StaffDAO implements StaffInterface{
 	}
 
 	@Override
-	public int updateStaffByEmail(String email) {
+	public int updateStaffByEmail(Staff staff) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -49,7 +49,7 @@ public class StaffDAO implements StaffInterface{
 	}
 
 	@Override
-	public int addStaffByEmail(String email) {
+	public int addStaffByEmail(Staff staff) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -61,7 +61,7 @@ public class StaffDAO implements StaffInterface{
 	}
 
 	@Override
-	public int updateStaffByName(String name) {
+	public int updateStaffByName(Staff staff) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -73,7 +73,7 @@ public class StaffDAO implements StaffInterface{
 	}
 
 	@Override
-	public int addStaffByName(String name) {
+	public int addStaffByName(Staff staff) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

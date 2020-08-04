@@ -8,9 +8,9 @@ public interface ReceiptInterface {
 
 		public Receipt getReceiptByID(UUID id);
 		
-		public int updateReceiptByID(UUID id);
+		public int updateReceiptByID(Receipt receipt);
 		
 		public int deleteReceiptByID(UUID id);
 		
-		public int createRecieptByID(UUID id);
+		public int createRecieptByID(Receipt receipt);
 }

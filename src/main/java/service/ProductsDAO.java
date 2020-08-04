@@ -7,7 +7,7 @@ import domain.Products;
 public class ProductsDAO implements ProductsInterface{
 
 	@Override
-	public int updateItem(UUID id) {
+	public int updateItem(Products product) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -19,7 +19,7 @@ public class ProductsDAO implements ProductsInterface{
 	}
 
 	@Override
-	public int addItem(UUID id) {
+	public int addItem(Products product) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

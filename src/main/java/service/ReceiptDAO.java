@@ -13,7 +13,7 @@ public class ReceiptDAO implements ReceiptInterface{
 	}
 
 	@Override
-	public int updateReceiptByID(UUID id) {
+	public int updateReceiptByID(Receipt receipt) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -25,11 +25,10 @@ public class ReceiptDAO implements ReceiptInterface{
 	}
 
 	@Override
-	public int createRecieptByID(UUID id) {
+	public int createRecieptByID(Receipt receipt) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 
 
 }

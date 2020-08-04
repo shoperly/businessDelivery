@@ -6,11 +6,11 @@ import domain.Products;
 
 public interface ProductsInterface {
 
-		public int updateItem(UUID id);
+		public int updateItem(Products product);
 		
 		public int deleteItem(UUID id);
 		
-		public int addItem(UUID id);
+		public int addItem(Products product);
 		
 		public Products getItem(UUID id);
 }

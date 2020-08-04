@@ -1,10 +1,26 @@
 package service;
 
 import java.util.UUID;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.sql.ResultSet;
+import java.sql.PreparedStatement;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 import domain.Vendor;
 
 public class VendorDAO implements VendorInterface{
+	private String databaseURI;
+    
+    public VendorDAO() {
+        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+    }
+    
+    public VendorDAO(final String uri) {
+        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+        this.databaseURI = uri;
+    }
 
 	@Override
 	public Vendor getVendorByID(UUID id) {
@@ -13,13 +29,13 @@ public class VendorDAO implements VendorInterface{
 	}
 
 	@Override
-	public int addVendorByID(UUID id) {
+	public int addVendorByID(Vendor vendor) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateVendorByID(UUID id) {
+	public int updateVendorByID(Vendor vendor) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -37,13 +53,13 @@ public class VendorDAO implements VendorInterface{
 	}
 
 	@Override
-	public int addVendorByName(String name) {
+	public int addVendorByName(Vendor vendor) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateVendorByName(String name) {
+	public int updateVendorByName(Vendor vendor) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -61,13 +77,13 @@ public class VendorDAO implements VendorInterface{
 	}
 
 	@Override
-	public int addVendorByEmail(String email) {
+	public int addVendorByEmail(Vendor vendor) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateVendorByEmail(String email) {
+	public int updateVendorByEmail(Vendor vendor) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -77,6 +93,5 @@ public class VendorDAO implements VendorInterface{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 
 }

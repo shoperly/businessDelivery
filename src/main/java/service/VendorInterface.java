@@ -7,18 +7,18 @@ import domain.Vendor;
 public interface VendorInterface {
 
 	public Vendor getVendorByID(UUID id);
-	public int addVendorByID(UUID id);
-	public int updateVendorByID(UUID id);
+	public int addVendorByID(Vendor vendor);
+	public int updateVendorByID(Vendor vendor);
 	public int deleteVendorByID(UUID id);
 	
 	public Vendor getVendorByName(String name);
-	public int addVendorByName(String name);
-	public int updateVendorByName(String name);
+	public int addVendorByName(Vendor vendor);
+	public int updateVendorByName(Vendor vendor);
 	public int deleteVendorByName(String name);
 	
 	public Vendor getVendorByEmail(String email);
-	public int addVendorByEmail(String email);
-	public int updateVendorByEmail(String email);
+	public int addVendorByEmail(Vendor vendor);
+	public int updateVendorByEmail(Vendor vendor);
 	public int deleteVendorByEmail(String email);
 }
 

@@ -8,18 +8,18 @@ public interface DeliveryInterface {
 
 	public Delivery getDeliveryByCustID(UUID id);
 	
-	public int addDeliveryByCustID(UUID id);
+	public int addDeliveryByCustID(Delivery delivery);
 	
-	public int updateDeliveryByCustID(UUID id);
+	public int updateDeliveryByCustID(Delivery delivery);
 	
 	public int deleteDeliveryByCustID(UUID id);
 	
 
 	public Delivery getDeliveryByStaffID(UUID id);
 	
-	public int addDeliveryByStaffID(UUID id);
+	public int addDeliveryByStaffID(Delivery delivery);
 	
-	public int updateDeliveryByStaffID(UUID id);
+	public int updateDeliveryByStaffID(Delivery delivery);
 	
 	public int deleteDeliveryByStaffID(UUID id);
 }

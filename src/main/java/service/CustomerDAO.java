@@ -6,6 +6,17 @@ import domain.Customer;
 
 public class CustomerDAO implements CustomerInterface{
 
+	private String databaseURI;
+    
+    public CustomerDAO() {
+        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+    }
+    
+    public CustomerDAO(final String uri) {
+        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+        this.databaseURI = uri;
+    }
+    
 	@Override
 	public Customer getCustomerByID(UUID id) {
 		// TODO Auto-generated method stub
@@ -13,13 +24,13 @@ public class CustomerDAO implements CustomerInterface{
 	}
 
 	@Override
-	public int updateCustomerByID(UUID id) {
+	public int updateCustomerByID(Customer customer) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int addCustomerByID(UUID id) {
+	public int addCustomerByID(Customer customer) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -37,13 +48,13 @@ public class CustomerDAO implements CustomerInterface{
 	}
 
 	@Override
-	public int updateCustomerByEmail(String email) {
+	public int updateCustomerByEmail(Customer customer) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int addCustomerByEmail(String email) {
+	public int addCustomerByEmail(Customer customer) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -61,13 +72,13 @@ public class CustomerDAO implements CustomerInterface{
 	}
 
 	@Override
-	public int updateCustomerByUserName(String userName) {
+	public int updateCustomerByUserName(Customer customer) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int addCustomerByUserName(String userName) {
+	public int addCustomerByUserName(Customer customer) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -77,6 +88,5 @@ public class CustomerDAO implements CustomerInterface{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 
 }

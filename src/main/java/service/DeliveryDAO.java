@@ -5,7 +5,17 @@ import java.util.UUID;
 import domain.Delivery;
 
 public class DeliveryDAO implements DeliveryInterface{
-
+	private String databaseURI;
+    
+    public DeliveryDAO() {
+        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+    }
+    
+    public DeliveryDAO(final String uri) {
+        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+        this.databaseURI = uri;
+    }
+    
 	@Override
 	public Delivery getDeliveryByCustID(UUID id) {
 		// TODO Auto-generated method stub
@@ -13,13 +23,13 @@ public class DeliveryDAO implements DeliveryInterface{
 	}
 
 	@Override
-	public int addDeliveryByCustID(UUID id) {
+	public int addDeliveryByCustID(Delivery delivery) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateDeliveryByCustID(UUID id) {
+	public int updateDeliveryByCustID(Delivery delivery) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -37,13 +47,13 @@ public class DeliveryDAO implements DeliveryInterface{
 	}
 
 	@Override
-	public int addDeliveryByStaffID(UUID id) {
+	public int addDeliveryByStaffID(Delivery delivery) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateDeliveryByStaffID(UUID id) {
+	public int updateDeliveryByStaffID(Delivery delivery) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -53,6 +63,5 @@ public class DeliveryDAO implements DeliveryInterface{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 
 }
