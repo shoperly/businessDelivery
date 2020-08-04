@@ -17,4 +17,5 @@ public class Receipt {
 	private String items;
 	@Getter @Setter
 	private String location;
+	
 }

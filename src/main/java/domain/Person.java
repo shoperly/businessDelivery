@@ -1,5 +1,8 @@
 package domain;
 
-public interface Person {
+import lombok.Getter;
+import lombok.Setter;
 
+public interface Person {
+	
 }
