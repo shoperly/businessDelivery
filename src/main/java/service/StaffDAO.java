@@ -5,7 +5,17 @@ import java.util.UUID;
 import domain.Staff;
 
 public class StaffDAO implements StaffInterface{
-
+	private String databaseURI;
+    
+    public StaffDAO() {
+        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+    }
+    
+    public StaffDAO(final String uri) {
+        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+        this.databaseURI = uri;
+    }
+	
 	@Override
 	public Staff getStaffByID(UUID id) {
 		// TODO Auto-generated method stub
