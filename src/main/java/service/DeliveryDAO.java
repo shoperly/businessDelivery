@@ -1,35 +1,35 @@
 package service;
 
-import java.util.UUID;
+import domain.Order;
 
-import domain.Delivery;
+import java.util.UUID;
 
 public class DeliveryDAO implements DeliveryInterface{
 	private String databaseURI;
-    
-    public DeliveryDAO() {
-        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
-    }
-    
-    public DeliveryDAO(final String uri) {
-        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
-        this.databaseURI = uri;
-    }
-    
+
+	public DeliveryDAO() {
+		this.databaseURI = "jdbc:h2:~/Downloads/h2/bin/INFO301/301";
+	}
+
+	public DeliveryDAO(final String uri) {
+		this.databaseURI = "jdbc:h2:~/Downloads/h2/bin/INFO301/301";
+		this.databaseURI = uri;
+	}
+
 	@Override
-	public Delivery getDeliveryByCustID(UUID id) {
+	public Order getDeliveryByCustID(UUID id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int addDeliveryByCustID(Delivery delivery) {
+	public int addDeliveryByCustID(Order delivery) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateDeliveryByCustID(Delivery delivery) {
+	public int updateDeliveryByCustID(Order delivery) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -41,19 +41,19 @@ public class DeliveryDAO implements DeliveryInterface{
 	}
 
 	@Override
-	public Delivery getDeliveryByStaffID(UUID id) {
+	public Order getDeliveryByStaffID(UUID id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int addDeliveryByStaffID(Delivery delivery) {
+	public int addDeliveryByStaffID(Order delivery) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateDeliveryByStaffID(Delivery delivery) {
+	public int updateDeliveryByStaffID(Order delivery) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -64,4 +64,5 @@ public class DeliveryDAO implements DeliveryInterface{
 		return 0;
 	}
 
+  
 }

@@ -1,9 +1,9 @@
 package domain;
 
-import java.util.UUID;
-
 import lombok.Getter;
 import lombok.Setter;
+
+
 
 public class Vendor {
 	@Getter @Setter
@@ -13,7 +13,7 @@ public class Vendor {
 	@Getter @Setter
 	private String address;
 	@Getter @Setter
-	private UUID vendorID;
+	private int vendorID;
 	@Getter @Setter
 	private String email;
 }

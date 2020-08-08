@@ -1,15 +1,15 @@
 package service;
 
-import java.util.UUID;
-
 import domain.Vendor;
+
+import java.util.UUID;
 
 public interface VendorInterface {
 
-	public Vendor getVendorByID(UUID id);
+	public Vendor getVendorByID(int id);
 	public int addVendorByID(Vendor vendor);
 	public int updateVendorByID(Vendor vendor);
-	public int deleteVendorByID(UUID id);
+	public int deleteVendorByID(int id);
 	
 	public Vendor getVendorByName(String name);
 	public int addVendorByName(Vendor vendor);

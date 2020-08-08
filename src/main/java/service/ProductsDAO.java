@@ -1,18 +1,18 @@
 package service;
 
-import java.util.UUID;
-
 import domain.Products;
+
+import java.util.UUID;
 
 public class ProductsDAO implements ProductsInterface{
 	private String databaseURI;
     
     public ProductsDAO() {
-        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+        this.databaseURI = "jdbc:h2:~/Downloads/h2/bin/INFO301/301";
     }
     
     public ProductsDAO(final String uri) {
-        this.databaseURI = "jdbc:h2:tcp://localhost:9092/~/310project";
+        this.databaseURI = "jdbc:h2:~/Downloads/h2/bin/INFO301/301";
         this.databaseURI = uri;
     }
 	@Override

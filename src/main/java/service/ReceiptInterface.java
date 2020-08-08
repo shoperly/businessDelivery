@@ -1,8 +1,8 @@
 package service;
 
-import java.util.UUID;
-
 import domain.Receipt;
+
+import java.util.UUID;
 
 public interface ReceiptInterface {
 

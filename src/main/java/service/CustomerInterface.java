@@ -1,8 +1,8 @@
 package service;
 
-import java.util.UUID;
-
 import domain.Customer;
+
+import java.util.UUID;
 
 public interface CustomerInterface {
 

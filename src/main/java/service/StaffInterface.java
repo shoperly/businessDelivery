@@ -1,7 +1,8 @@
 package service;
-import java.util.UUID;
 
 import domain.Staff;
+
+import java.util.UUID;
 
 public interface StaffInterface {
 	

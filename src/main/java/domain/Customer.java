@@ -1,9 +1,9 @@
 package domain;
 
-import java.util.UUID;
-
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.UUID;
 
 public class Customer implements Person{
 	@Getter @Setter
