@@ -12,6 +12,13 @@ CREATE TABLE CUSTOMER(
 
 CREATE TABLE STAFF
 (
+    staffname VARCHAR2(50) not null,
+    lastname VARCHAR2(50) not null,
+    address VARCHAR2(50),
+    cellnumber VARCHAR2(50) not null unique,
+    email VARCHAR2(50) not null unique,
+    STAFFID VARCHAR2(50) not null unique
+
 );
 
 CREATE TABLE RECEIPT
@@ -24,8 +31,8 @@ CREATE TABLE PRODUCTS
 
 CREATE TABLE VENDOR
 (
-    name VARCHAR(50) not null,
-    cell VARCHAR2(50),
+    name VARCHAR2(50) not null,
+    cellnumber VARCHAR2(50),
     address VARCHAR2(50),
     vendorID VARCHAR2(50) not null unique,
     email VARCHAR2(50) not null

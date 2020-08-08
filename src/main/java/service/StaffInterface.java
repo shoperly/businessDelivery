@@ -6,9 +6,9 @@ import java.util.UUID;
 
 public interface StaffInterface {
 	
-	public Staff getStaffByID(UUID id);
+	public Staff getStaffByID(int id);
 	public int updateStaffByID(Staff staff);
-	public int deleteStaffByID(UUID id);
+	public int deleteStaffByID(int id);
 	public int addStaffByID(Staff staff);
 	
 	

@@ -17,5 +17,5 @@ public class Staff implements Person{
 	@Getter @Setter
 	private String email;
 	@Getter @Setter
-	private UUID staffID;
+	private int staffID;
 }
