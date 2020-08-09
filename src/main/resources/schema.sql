@@ -7,8 +7,15 @@ DROP TABLE IF EXISTS ORDERS;
 DROP TABLE IF EXISTS ORDERLINE;
 
 CREATE TABLE CUSTOMER(
-	id INT AUTO_INCREMENT PRIMARY KEY,
-	first_name VARCHAR(250) NOT NULL);
+	id VARCHAR2(50) PRIMARY KEY,
+	customername VARCHAR2(250) NOT NULL,
+	lastname VARCHAR2(50) not null,
+	address VARCHAR2(50) not null,
+	cellnumber VARCHAR2(50) not null,
+	email VARCHAR2(50) not null,
+	cardDetails VARCHAR2(50),
+	custid VARCHAR2(50)
+	);
 
 CREATE TABLE STAFF
 (
@@ -23,15 +30,24 @@ CREATE TABLE STAFF
 
 CREATE TABLE RECEIPT
 (
+    custid VARCHAR2(50)  not null unique,
+    total double(20) not null,
+    dateofreceipt date not null,
+    location varchar2(50) not null,
+    receiptID VARCHAR2(50) not null unique
 );
 
 CREATE TABLE PRODUCTS
 (
+    productname VARCHAR2(50) not null unique,
+    price DOUBLE(10) not null,
+    details VARCHAR2(50) not null,
+    productID VARCHAR2(15) not null unique
 );
 
 CREATE TABLE VENDOR
 (
-    name VARCHAR2(50) not null,
+    vendorname VARCHAR2(50) not null,
     cellnumber VARCHAR2(50),
     address VARCHAR2(50),
     vendorID VARCHAR2(50) not null unique,

@@ -5,7 +5,11 @@ import lombok.Setter;
 
 public class OrderLine {
 	@Getter @Setter
-	private Products product;
+	private String productID;
+	@Getter @Setter
+	private String orderID;
+	@Getter @Setter
+	private String receiptID;
 	@Getter @Setter
 	private Double quantity;
 }

@@ -4,18 +4,17 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.sql.Date;
 
 public class Receipt {
 	@Getter @Setter
-	private String custID;
+	private int custID;
 	@Getter @Setter
-	private BigDecimal total;
+	private Double total;
 	@Getter @Setter
 	private Date date;
 	@Getter @Setter
-	private String items;
-	@Getter @Setter
 	private String location;
-	
+	@Getter @Setter
+	private String receiptID;
 }

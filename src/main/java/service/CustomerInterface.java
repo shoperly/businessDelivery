@@ -6,10 +6,10 @@ import java.util.UUID;
 
 public interface CustomerInterface {
 
-	public Customer getCustomerByID(UUID id);
+	public Customer getCustomerByID(String id);
 	public int updateCustomerByID(Customer customer);
 	public int addCustomerByID(Customer customer);
-	public int deleteCustomerByID(UUID id);
+	public int deleteCustomerByID(String id);
 	
 	public Customer getCustomerByEmail(String email);
 	public int updateCustomerByEmail(Customer customer);

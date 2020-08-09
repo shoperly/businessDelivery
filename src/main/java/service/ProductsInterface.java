@@ -8,9 +8,9 @@ public interface ProductsInterface {
 
 		public int updateItem(Products product);
 		
-		public int deleteItem(UUID id);
+		public int deleteItem(String id);
 		
 		public int addItem(Products product);
 		
-		public Products getItem(UUID id);
+		public Products getItem(String id);
 }

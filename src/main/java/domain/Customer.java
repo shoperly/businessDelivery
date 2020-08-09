@@ -19,6 +19,6 @@ public class Customer implements Person{
 	@Getter @Setter
 	private String cardDetails;
 	@Getter @Setter
-	private UUID custID;
+	private String custID;
 
 }

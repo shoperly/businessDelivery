@@ -10,9 +10,9 @@ public class Products {
 	@Getter @Setter
 	private String name;
 	@Getter @Setter
-	private  BigDecimal price;
+	private  Double price;
 	@Getter @Setter
 	private String details;
 	@Getter @Setter
-	private UUID productID;
+	private String productID;
 }
